@@ -7,14 +7,14 @@ public class ArithmeticMean {
 		int sum = 0;
 		int counter = 0;
 		
-		while (true) {
+		/* while (true) {
 			int number = scan.nextInt();
 			if (number == 0) break;
 			
 			counter++;
 			sum += number;
 		}
-		System.out.printf("Arithmetic mean is %.2f%n", (double) sum / counter);
+		System.out.printf("Arithmetic mean is %.2f%n", (double) sum / counter); */
 
 		/* do {
 			number = scan.nextInt();
