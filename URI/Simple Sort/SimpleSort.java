@@ -10,7 +10,7 @@ public class SimpleSort {
         int b = scan.nextInt(); // 15
         int c = scan.nextInt(); // 13
 
-        String inputOrder = a + "\n" + b + "\n" + c;
+        String inputOrder = a + "\n" + b + "\n" + c; // "\n" - чтобы вывести в колонку
 
         if (a > b) {
             int t = a;

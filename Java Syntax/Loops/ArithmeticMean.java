@@ -9,6 +9,7 @@ public class ArithmeticMean {
 		
 		while (true) {
 			int number = scan.nextInt();
+			
 			if (number == 0) break;
 			
 			counter++;

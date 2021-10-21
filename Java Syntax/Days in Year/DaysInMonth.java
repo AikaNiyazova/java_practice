@@ -6,21 +6,21 @@ public class DaysInMonth {
 
 		System.out.println("Enter the numeric value of the month: ");
 		int month = scan.nextInt();
+
+		if (month < 1 || month > 12) {
+			System.out.println("Invalid month: " + month);
+			System.exit(1); // Все правильно, но данные не верны
+							// КОДЫ ОШИБКИ: 0 - ошибки отсутсвуют;
+							// 1 - программа работает корректно, исправляем незапланированную ситуацию;
+							// -1 - произошла поломка.
+		}
 		
 		System.out.println("Enter the year: ");
 		int year = scan.nextYear();
 
 		int day; // мусор
 
-		if (month == 1 ||
-			month == 3 ||
-			month == 5 ||
-			month == 7 ||
-			month == 8 ||
-			month == 10 ||
-			month == 12)
-
-		boolean isLeap = (year % 4) == 0 && (year % 100) != 0 || (year % 400) == 0;
+		boolean isLeap = year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
 		int leapYear = isLeap ? 29 : 28;
 
 		switch (month) {
@@ -49,12 +49,26 @@ public class DaysInMonth {
 				day = -1;
 		}
 
+		/*
 		if (day == -1) {
 			System.out.println("Invalid month: " + month);
 		} else {
 			System.out.println("Days: " + day);
 		}
-		
+		*/
+		System.out.println("Days: " + day);
+		/*
+		if (month == 1 ||
+			month == 3 ||
+			month == 5 ||
+			month == 7 ||
+			month == 8 ||
+			month == 10 ||
+			month == 12) {
+
+			day = 31;
+		}
+		*/
 	}
 }
 

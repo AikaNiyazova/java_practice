@@ -18,7 +18,7 @@ public class PositivesAndAverage {
             }
         }
         System.out.println(positivesCounter + " valores positivos");
-        // if (positivesCounter > 0) {
+        // if (positivesCounter > 0) { // чтобы отсеять кейсы, если пользователь вводит все числа меньше 0
             System.out.printf("%.1f%n", positivesSum / positivesCounter);
         //}
         
